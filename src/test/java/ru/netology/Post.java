@@ -18,7 +18,7 @@ public class Post {
                 .post("/post")
 // Проверки
                 .then()
-                .statusCode(404)
+                .statusCode(200)
                 .body("data", equalTo("some data"))
         ;
     }
